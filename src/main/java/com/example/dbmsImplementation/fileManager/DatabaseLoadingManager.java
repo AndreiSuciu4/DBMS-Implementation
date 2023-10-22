@@ -11,6 +11,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+
 public class DatabaseLoadingManager {
     public static Catalog loadCatalogFromFile(String pathname) {
         Catalog catalog = new Catalog();

@@ -1,0 +1,10 @@
+<div class="container">
+  <textarea  rows="10" cols="60" pInputTextarea [(ngModel)]="command"></textarea>
+  <div class="card flex justify-content-center">
+    <p-button label="Submit" (onClick)="sendTextToServer()"></p-button>
+  </div>
+
+  <div class="card" *ngIf="showMessage">
+    <p-messages [(value)]="message" [enableService]="false"></p-messages>
+  </div>
+</div>
