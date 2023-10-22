@@ -103,4 +103,8 @@ public class Table {
     public void setIndexFileList(List<IndexFile> indexFileList) {
         this.indexFileList = indexFileList;
     }
+
+    public void addAttribute(Attribute attribute) {
+        attributeList.add(attribute);
+    }
 }
