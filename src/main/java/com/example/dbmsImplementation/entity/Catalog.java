@@ -12,6 +12,10 @@ public class Catalog {
         return databaseList;
     }
 
+    public void setDatabaseList(List<Database> databaseList) {
+        this.databaseList = databaseList;
+    }
+
     public void addDatabase(Database database) {
         databaseList.add(database);
     }

@@ -16,6 +16,14 @@ public class IndexFile {
         this.indexAttributeList = indexAttributeList;
     }
 
+    public IndexFile(String indexName, int keyLength, boolean isUnique, String indexType) {
+        this.indexName = indexName;
+        this.keyLength = keyLength;
+        this.isUnique = isUnique;
+        this.indexType = indexType;
+        this.indexAttributeList = new ArrayList<>();
+    }
+
     public String getIndexName() {
         return indexName;
     }

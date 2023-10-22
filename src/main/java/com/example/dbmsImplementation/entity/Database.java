@@ -25,4 +25,8 @@ public class Database {
     public void addTable(Table table) {
         tableList.add(table);
     }
+
+    public void setTableList(List<Table> tableList) {
+        this.tableList = tableList;
+    }
 }

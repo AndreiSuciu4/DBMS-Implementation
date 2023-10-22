@@ -14,7 +14,7 @@ import javax.xml.transform.stream.StreamResult;
 
 import java.util.*;
 public class DatabaseSavingManager {
-    public static void saveCatalogToFile(Catalog catalog) {
+    public static void saveCatalogToFile(Catalog catalog, String pathname) {
         try {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
@@ -27,7 +27,7 @@ public class DatabaseSavingManager {
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             DOMSource source = new DOMSource(document);
-            StreamResult result = new StreamResult(new java.io.File("dbfiles/catalog.xml"));
+            StreamResult result = new StreamResult(new java.io.File(pathname));
 
             transformer.transform(source, result);
         } catch (Exception e) {
