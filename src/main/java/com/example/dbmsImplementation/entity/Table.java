@@ -22,6 +22,17 @@ public class Table {
         indexFileList = new ArrayList<>();
     }
 
+    public Table(String tableName, String filename, int rowLength, List<Attribute> attributeList, List<String> primaryKey, List<ForeignKey> foreignKeyList, List<String> uniqueKeyList) {
+        this.tableName = tableName;
+        this.filename = filename;
+        this.rowLength = rowLength;
+        this.attributeList = attributeList;
+        this.primaryKey = primaryKey;
+        this.foreignKeyList = foreignKeyList;
+        this.uniqueKeyList = uniqueKeyList;
+        this.indexFileList = new ArrayList<>();
+    }
+
     public Table(String tableName,
                  String filename,
                  int rowLength,
@@ -106,5 +117,9 @@ public class Table {
 
     public void addAttribute(Attribute attribute) {
         attributeList.add(attribute);
+    }
+
+    public void addIndex(IndexFile indexFile) {
+        indexFileList.add(indexFile);
     }
 }

@@ -1,6 +1,382 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Databases>
-    <DataBase dataBaseName="Garage">
-        <Tables/>
+    <DataBase dataBaseName="University">
+        <Tables>
+            <Table fileName="specialization.bin" rowLength="0" tableName="specialization">
+                <Structure>
+                    <Attribute attributeName="" isnull="0" length="0" type="specid"/>
+                    <Attribute attributeName="specname" isnull="1" length="30" type="varchar"/>
+                    <Attribute attributeName="language" isnull="1" length="20" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute/>
+                    <PkAttribute>specid</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>language</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="specialization.bin" rowLength="0" tableName="specialization">
+                <Structure>
+                    <Attribute attributeName="specid" isnull="1" length="3" type="char"/>
+                    <Attribute attributeName="specname" isnull="1" length="30" type="varchar"/>
+                    <Attribute attributeName="language" isnull="1" length="20" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute/>
+                    <PkAttribute>specid</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>language</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="specialization.bin" rowLength="0" tableName="specialization">
+                <Structure>
+                    <Attribute attributeName="" isnull="0" length="0" type="specid"/>
+                    <Attribute attributeName="specname" isnull="1" length="30" type="varchar"/>
+                    <Attribute attributeName="language" isnull="1" length="20" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute/>
+                    <PkAttribute>specid</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>language</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="orders.bin" rowLength="0" tableName="orders">
+                <Structure>
+                    <Attribute attributeName="orderid" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="ordernumber" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="personid" isnull="0" length="0" type="int"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute/>
+                    <PkAttribute>orderid</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys>
+                    <ForeignKey>
+                        <FkAttribute>personid</FkAttribute>
+                        <References>
+                            <RefTable>persons</RefTable>
+                            <RefAttribute>personid</RefAttribute>
+                        </References>
+                    </ForeignKey>
+                </ForeignKeys>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="newtable.bin" rowLength="0" tableName="newtable">
+                <Structure>
+                    <Attribute attributeName="id" isnull="0" length="0" type="int"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n1.bin" rowLength="0" tableName="n1">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>id</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n2.bin" rowLength="0" tableName="n2">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="name" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>id</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n3.bin" rowLength="0" tableName="n3">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="name" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>id</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n4.bin" rowLength="0" tableName="n4">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="name" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>id</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n5.bin" rowLength="0" tableName="n5">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="name" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>id</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n6.bin" rowLength="0" tableName="n6">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="name" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>id</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n7.bin" rowLength="0" tableName="n7">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="num" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n8.bin" rowLength="0" tableName="n8">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="num" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>num</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n9.bin" rowLength="0" tableName="n9">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="num" isnull="1" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n10.bin" rowLength="0" tableName="n10">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="num" isnull="1" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey/>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>num</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n11.bin" rowLength="0" tableName="n11">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="num" isnull="0" length="30" type="varchar"/>
+                    <Attribute attributeName="adress" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys/>
+                <UniqueKeys>
+                    <UniqueAttribute>num</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n12.bin" rowLength="0" tableName="n12">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="nam" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys/>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n15.bin" rowLength="0" tableName="n15">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="nam" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys>
+                    <ForeignKey>
+                        <FkAttribute>id</FkAttribute>
+                        <References>
+                            <RefTable>orders</RefTable>
+                            <RefAttribute>orderid</RefAttribute>
+                        </References>
+                    </ForeignKey>
+                </ForeignKeys>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n16.bin" rowLength="0" tableName="n16">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="nam" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                    <PkAttribute>nam</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys>
+                    <ForeignKey>
+                        <FkAttribute>id</FkAttribute>
+                        <References>
+                            <RefTable>orders</RefTable>
+                            <RefAttribute>orderid</RefAttribute>
+                        </References>
+                    </ForeignKey>
+                </ForeignKeys>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n17.bin" rowLength="0" tableName="n17">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="nam" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                    <PkAttribute>nam</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys>
+                    <ForeignKey>
+                        <FkAttribute>id</FkAttribute>
+                        <FkAttribute>nam</FkAttribute>
+                        <References>
+                            <RefTable>orders</RefTable>
+                            <RefAttribute>orderid</RefAttribute>
+                            <RefAttribute>personid</RefAttribute>
+                        </References>
+                    </ForeignKey>
+                </ForeignKeys>
+                <UniqueKeys/>
+                <IndexFiles/>
+            </Table>
+            <Table fileName="n20.bin" rowLength="0" tableName="n20">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="nam" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys>
+                    <ForeignKey>
+                        <FkAttribute>id</FkAttribute>
+                        <References>
+                            <RefTable>orders</RefTable>
+                            <RefAttribute>orderid</RefAttribute>
+                        </References>
+                    </ForeignKey>
+                </ForeignKeys>
+                <UniqueKeys>
+                    <UniqueAttribute>id</UniqueAttribute>
+                    <UniqueAttribute>nam</UniqueAttribute>
+                </UniqueKeys>
+                <IndexFiles>
+                    <IndexFile indexName="id.ind" indexType="BTree" isUnique="1" keyLength="20">
+                        <IndexAttributes>
+                            <IAttribute>id</IAttribute>
+                        </IndexAttributes>
+                    </IndexFile>
+                    <IndexFile indexName="nam.ind" indexType="BTree" isUnique="1" keyLength="20">
+                        <IndexAttributes>
+                            <IAttribute>nam</IAttribute>
+                        </IndexAttributes>
+                    </IndexFile>
+                </IndexFiles>
+            </Table>
+            <Table fileName="n30.bin" rowLength="0" tableName="n30">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="nam" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                    <PkAttribute>nam</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys>
+                    <ForeignKey>
+                        <FkAttribute>id</FkAttribute>
+                        <References>
+                            <RefTable>orders</RefTable>
+                            <RefAttribute>orderid</RefAttribute>
+                        </References>
+                    </ForeignKey>
+                </ForeignKeys>
+                <UniqueKeys/>
+                <IndexFiles>
+                    <IndexFile indexName="[id, nam].ind" indexType="BTree" isUnique="1" keyLength="20">
+                        <IndexAttributes>
+                            <IAttribute>id</IAttribute>
+                            <IAttribute>nam</IAttribute>
+                        </IndexAttributes>
+                    </IndexFile>
+                </IndexFiles>
+            </Table>
+            <Table fileName="n31.bin" rowLength="0" tableName="n31">
+                <Structure>
+                    <Attribute attributeName="id" isnull="1" length="0" type="int"/>
+                    <Attribute attributeName="nam" isnull="0" length="30" type="varchar"/>
+                </Structure>
+                <PrimaryKey>
+                    <PkAttribute>id</PkAttribute>
+                    <PkAttribute>nam</PkAttribute>
+                </PrimaryKey>
+                <ForeignKeys>
+                    <ForeignKey>
+                        <FkAttribute>id</FkAttribute>
+                        <References>
+                            <RefTable>orders</RefTable>
+                            <RefAttribute>orderid</RefAttribute>
+                        </References>
+                    </ForeignKey>
+                </ForeignKeys>
+                <UniqueKeys/>
+                <IndexFiles>
+                    <IndexFile indexName="primaryKeys.ind" indexType="BTree" isUnique="1" keyLength="20">
+                        <IndexAttributes>
+                            <IAttribute>id</IAttribute>
+                            <IAttribute>nam</IAttribute>
+                        </IndexAttributes>
+                    </IndexFile>
+                </IndexFiles>
+            </Table>
+        </Tables>
     </DataBase>
 </Databases>
