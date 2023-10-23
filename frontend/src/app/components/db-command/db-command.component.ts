@@ -28,7 +28,7 @@ export class DbCommandComponent {
     }, error => {
         this.command = '';
         this.message = [
-          { severity: 'error', summary: 'Error'},
+          { severity: 'error', summary: 'Error: ' + error.error},
         ];
         console.log(error)
         this.showMessage = true;
